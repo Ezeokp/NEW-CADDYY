@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Caddy</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Caddy</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <section class="contact">
+      <div class="container">
+        <h2>Contact Us</h2>
+        <p>If you have any questions or need more information, please reach out.</p>
+        <div class="contact-info">
+          <h3>Holli Henderson, CEO</h3>
+          <p>Email: <a href="mailto:Holli.Henderson@caddykit.com">holli.Henderson@caddykit.com</a></p>
+          <p>Phone: +1 901 335 7195</p>
+        </div>
+        <form action="mailto:Holli.Henderson@caddykit.com" method="post" enctype="text/plain">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="subject">Subject:</label>
+          <input type="text" id="subject" name="subject">
+          
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Caddy. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

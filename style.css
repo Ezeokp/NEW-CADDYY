@@ -1,0 +1,265 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff8f8; /* soft pastel background */
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Header and Navigation */
+header {
+  background: #ffeef8; /* very light pastel */
+  padding: 10px 0;
+  border-bottom: 1px solid #f4c2c2;
+}
+header h1 {
+  float: left;
+  font-size: 28px;
+  color: #d6336c;
+}
+nav {
+  float: right;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+nav ul li {
+  margin-left: 20px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #d6336c;
+  padding: 8px 15px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+nav ul li a:hover,
+nav ul li a.active {
+  background-color: #d6336c;
+  color: #fff;
+}
+
+/* Clearfix */
+header::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Image Highlighting */
+.highlight-img {
+  border: 3px solid orange; /* This highlights images in orange */
+}
+
+/* Hero Section */
+.hero {
+  background: #ffeef8;
+  text-align: center;
+  padding: 60px 20px;
+  position: relative;
+}
+.hero-img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #d6336c;
+}
+.hero p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #555;
+}
+.btn {
+  background: #d6336c;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.btn:hover {
+  background: #b82b5c;
+}
+
+/* Features Section */
+.features {
+  padding: 40px 0;
+  background: #fff;
+}
+.features .feature {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+.features .feature img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.features .feature h3 {
+  margin-bottom: 10px;
+  color: #d6336c;
+}
+.features .feature p {
+  color: #555;
+}
+
+/* About Section */
+.about {
+  padding: 40px 0;
+  background: #fff;
+}
+.about h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d6336c;
+}
+.about p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 20px;
+}
+.about-img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Services Section */
+.services {
+  padding: 40px 0;
+  background: #fdfdfd;
+}
+.services h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d6336c;
+}
+.service-item {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.service-item img {
+  width: 100%;
+  max-width: 300px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.service-item h3 {
+  margin-bottom: 10px;
+  color: #d6336c;
+}
+.service-item p {
+  color: #555;
+}
+
+/* Products Section */
+.products {
+  padding: 40px 0;
+  background: #fff;
+}
+.products h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d6336c;
+}
+.product-img {
+  display: block;
+  margin: 0 auto 20px;
+  max-width: 100%;
+  border-radius: 10px;
+}
+.products p {
+  font-size: 18px;
+  color: #555;
+  text-align: center;
+}
+
+/* Contact Section */
+.contact {
+  padding: 40px 0;
+  background: #fff;
+}
+.contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #d6336c;
+}
+.contact p {
+  text-align: center;
+  color: #555;
+  margin-bottom: 20px;
+}
+.contact-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.contact-info h3 {
+  color: #d6336c;
+  margin-bottom: 5px;
+}
+.contact-info p {
+  color: #555;
+  margin-bottom: 5px;
+}
+.contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.contact form label {
+  margin-top: 10px;
+  color: #555;
+}
+.contact form input,
+.contact form textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+.contact form button {
+  margin-top: 20px;
+  padding: 10px;
+  border: none;
+  background: #d6336c;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.contact form button:hover {
+  background: #b82b5c;
+}
+
+/* Footer */
+footer {
+  background: #ffeef8;
+  padding: 20px 0;
+  text-align: center;
+  border-top: 1px solid #f4c2c2;
+}
