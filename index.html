@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Caddy - Empowering Women's Health</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Caddy</h1>
+  <!-- Sticky Header -->
+  <header id="header">
+    <div class="container header-container">
+      <h1 class="logo">Caddy</h1>
       <nav>
         <ul>
           <li><a href="index.html" class="active">Home</a></li>
@@ -21,46 +22,58 @@
       </nav>
     </div>
   </header>
-  
-  <main>
-    <section class="hero">
-      <div class="container">
-        <!-- IMAGE: Empowering Women (LoremFlickr) -->
-        <img src="https://loremflickr.com/1100/400/women,health,empowerment" alt="Empowering Women" class="hero-img interactive-image highlight-img">
-        <h2>Empowering Women Through Innovation</h2>
-        <p>Discover Caddy – a comprehensive solution combining a stylish, modular healthcare kit with a digital platform for personalized guidance and community support.</p>
-        <a href="about.html" class="btn">Learn More</a>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Empowering Women Through Innovation</h2>
+      <p>Discover Caddy – a revolutionary healthcare kit integrated with digital guidance and community support.</p>
+      <a href="about.html" class="btn">Learn More</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="features">
+    <div class="container features-grid">
+      <div class="feature">
+        <!-- Relevant image from PlaceIMG (People) -->
+        <img src="http://placeimg.com/300/300/people" alt="Community Support" class="interactive-image highlight-img">
+        <h3>Community Support</h3>
+        <p>Join a vibrant network of empowered women.</p>
       </div>
-    </section>
-    
-    <section class="features">
-      <div class="container">
-        <div class="feature">
-          <!-- IMAGE: Community Support -->
-          <img src="https://loremflickr.com/300/300/women,community" alt="Community Support" class="interactive-image highlight-img">
-          <h3>Community Support</h3>
-          <p>Join a vibrant network of women empowering each other.</p>
-        </div>
-        <div class="feature">
-          <!-- IMAGE: Digital Empowerment -->
-          <img src="https://loremflickr.com/300/300/digital,technology" alt="Digital Empowerment" class="interactive-image highlight-img">
-          <h3>Digital Empowerment</h3>
-          <p>Access personalized health tips and tracking tools at your fingertips.</p>
-        </div>
-        <div class="feature">
-          <!-- IMAGE: Sustainable Design -->
-          <img src="https://loremflickr.com/300/300/sustainable,design" alt="Sustainable Design" class="interactive-image highlight-img">
-          <h3>Sustainable Design</h3>
-          <p>Eco-friendly materials and ethical production for a better future.</p>
-        </div>
+      <div class="feature">
+        <!-- Relevant image from PlaceIMG (Tech) -->
+        <img src="http://placeimg.com/300/300/tech" alt="Digital Empowerment" class="interactive-image highlight-img">
+        <h3>Digital Empowerment</h3>
+        <p>Access personalized health tips and tracking tools.</p>
       </div>
-    </section>
-  </main>
-  
+      <div class="feature">
+        <!-- Relevant image from PlaceIMG (Nature) -->
+        <img src="http://placeimg.com/300/300/nature" alt="Sustainable Design" class="interactive-image highlight-img">
+        <h3>Sustainable Design</h3>
+        <p>Eco-friendly materials and innovative design.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Caddy. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Sticky Header -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>

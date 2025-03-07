@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Services - Caddy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Caddy</h1>
+  <!-- Sticky Header -->
+  <header id="header">
+    <div class="container header-container">
+      <h1 class="logo">Caddy</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,37 +22,51 @@
       </nav>
     </div>
   </header>
-  
-  <main>
-    <section class="services">
-      <div class="container">
-        <h2>Our Services</h2>
+
+  <!-- Services Section -->
+  <section class="services">
+    <div class="container">
+      <h2>Our Services</h2>
+      <div class="services-grid">
         <div class="service-item">
-          <!-- IMAGE: Health & Self-Care Tips -->
-          <img src="https://loremflickr.com/300/300/selfcare,health" alt="Health & Self-Care Tips" class="interactive-image highlight-img">
+          <!-- IMAGE: Health & Self-Care Tips (PlaceIMG - People) -->
+          <img src="http://placeimg.com/300/300/people" alt="Health & Self-Care Tips" class="interactive-image highlight-img">
           <h3>Health & Self-Care Tips</h3>
-          <p>Receive personalized advice and self-care routines to support your well-being.</p>
+          <p>Receive personalized advice and routines to boost your well-being.</p>
         </div>
         <div class="service-item">
-          <!-- IMAGE: Period Tracking -->
-          <img src="https://loremflickr.com/300/300/period,health" alt="Period Tracking" class="interactive-image highlight-img">
+          <!-- IMAGE: Period Tracking (PlaceIMG - Tech) -->
+          <img src="http://placeimg.com/300/300/tech" alt="Period Tracking" class="interactive-image highlight-img">
           <h3>Period Tracking</h3>
-          <p>Stay informed about your cycle with our intuitive tracking tool.</p>
+          <p>Stay informed about your cycle with our cutting-edge tracking tools.</p>
         </div>
         <div class="service-item">
-          <!-- IMAGE: Community Forum -->
-          <img src="https://loremflickr.com/300/300/community,support" alt="Community Forum" class="interactive-image highlight-img">
+          <!-- IMAGE: Community Forum (PlaceIMG - People) -->
+          <img src="http://placeimg.com/300/300/people" alt="Community Forum" class="interactive-image highlight-img">
           <h3>Community Forum</h3>
-          <p>Connect with a supportive network of women sharing advice and inspiration.</p>
+          <p>Engage with a supportive network of women sharing advice and experiences.</p>
         </div>
       </div>
-    </section>
-  </main>
-  
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Caddy. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Sticky Header -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>

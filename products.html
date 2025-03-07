@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Products - Caddy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Caddy</h1>
+  <!-- Sticky Header -->
+  <header id="header">
+    <div class="container header-container">
+      <h1 class="logo">Caddy</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,22 +22,34 @@
       </nav>
     </div>
   </header>
-  
-  <main>
-    <section class="products">
-      <div class="container">
-        <h2>Our Product: The Caddy Kit</h2>
-        <!-- IMAGE: Caddy Kit Product -->
-        <img src="https://loremflickr.com/600/400/healthkit,design" alt="Caddy Kit" class="product-img interactive-image highlight-img">
-        <p>The Caddy Kit is a sleek, modular solution designed to simplify your health routine. With adjustable compartments, removable pouches, and an integrated empowerment booklet, our kit is both practical and inspiring—a step toward a more empowered, connected lifestyle.</p>
-      </div>
-    </section>
-  </main>
-  
+
+  <!-- Products Section -->
+  <section class="products">
+    <div class="container">
+      <h2>Our Product: The Caddy Kit</h2>
+      <!-- IMAGE: Caddy Kit (PlaceIMG - Tech) -->
+      <img src="http://placeimg.com/600/400/tech" alt="Caddy Kit" class="product-img interactive-image highlight-img">
+      <p>The Caddy Kit is a sleek, modular solution designed to revolutionize your health routine. With customizable compartments and an integrated empowerment booklet, it’s as functional as it is inspiring.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Caddy. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Sticky Header -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>

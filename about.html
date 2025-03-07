@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>About - Caddy</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Caddy</h1>
+  <!-- Sticky Header -->
+  <header id="header">
+    <div class="container header-container">
+      <h1 class="logo">Caddy</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -21,23 +22,37 @@
       </nav>
     </div>
   </header>
-  
-  <main>
-    <section class="about">
-      <div class="container">
-        <h2>About Caddy</h2>
-        <!-- IMAGE: Our Vision -->
-        <img src="https://loremflickr.com/500/300/women,empowerment" alt="Our Vision" class="about-img interactive-image highlight-img">
-        <p>Caddy was created to address the challenges of isolation, stigma, and misinformation in women's health. Our mission is to empower women by providing a comprehensive, stylish healthcare kit paired with a digital platform for personalized guidance and community support.</p>
-        <p>We believe every woman deserves trusted health resources and a supportive community. With Caddy, you're joining a movement toward empowerment and connection.</p>
+
+  <!-- About Section -->
+  <section class="about">
+    <div class="container">
+      <h2>About Caddy</h2>
+      <div class="about-content">
+        <!-- IMAGE: Our Vision (using PlaceIMG for People) -->
+        <img src="http://placeimg.com/500/300/people" alt="Our Vision" class="about-img interactive-image highlight-img">
+        <p>Caddy was created to tackle the challenges of isolation, stigma, and misinformation in women's health. Our mission is to empower women by providing a comprehensive, stylish healthcare kit paired with a digital platform for personalized guidance and community support.</p>
+        <p>We believe every woman deserves trusted health resources and a supportive community. With Caddy, you join a movement toward empowerment and connection.</p>
       </div>
-    </section>
-  </main>
-  
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     <div class="container">
       <p>&copy; 2025 Caddy. All rights reserved.</p>
     </div>
   </footer>
+
+  <!-- JavaScript for Sticky Header -->
+  <script>
+    window.addEventListener('scroll', function() {
+      const header = document.getElementById('header');
+      if (window.pageYOffset > 50) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+  </script>
 </body>
 </html>
