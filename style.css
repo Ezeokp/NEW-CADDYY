@@ -263,3 +263,11 @@ footer {
   text-align: center;
   border-top: 1px solid #f4c2c2;
 }
+.interactive-image {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.interactive-image:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}
